@@ -8,7 +8,7 @@
   "env": { 
   
     "SESSION_ID": {
-      "description": "Ensure your session Id starts with the word KAISEN~",
+      "description": "Ensure your session Id starts with the word SKIDDY~",
       "required": true,
       "value": ""
     },

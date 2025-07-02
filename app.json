@@ -1,9 +1,9 @@
 {
-  "name": "RAHEEM-XMD-2",
-  "description": "🚀 RAHEEM XMD 2 WhatsApp MultiDevice Bot – BY RAHEEM-CM 💡✨",
+  "name": "SKIDDXDM",
+  "description": "🚀 SKIDDXDM WhatsApp MultiDevice Bot – BY SKIDDXDM 💡✨",
   "logo": "https://files.catbox.moe/vgb4cw.jpg",
-  "keywords": ["RAHEEM-CM", "whatsapp-bot", "whatsapp-md-bot"],
-  "repository": "https://github.com/Raheem-cm/RAHEEM-XMD-2",
+  "keywords": ["SKIDDXDM", "whatsapp-bot", "whatsapp-md-bot"],
+  "repository": "https://github.com/fel255/skiddxdm",
   "stack": "container",
   "env": { 
   
@@ -20,12 +20,12 @@
     "OWNER_NAME": {
       "description": "Your name as the bot owner",
       "required": true,
-      "value": "RAHEEM-CM"
+      "value": "SKIDDXDM"
     },
     "OWNER_NUMBER": {
       "description": "Your WhatsApp number",
       "required": true,
-      "value": "255763111390"
+      "value": "255768091936"
     },
     "AUTO_READ": {
       "description": "Enable bot to auto-read messages (true/false)",

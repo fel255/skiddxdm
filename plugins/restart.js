@@ -1,20 +1,37 @@
-import config from '../config.cjs';
+/*
+_  ______   _____ _____ _____ _   _
+| |/ / ___| |_   _| ____/___ | | | |
+| ' / |  _    | | |  _|| |   | |_| |
+| . \ |_| |   | | | |__| |___|  _  |
+|_|\_\____|   |_| |_____\____|_| |_|
 
-const restartBot = async (m) => {
-  const prefix = config.PREFIX;
-const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
-const text = m.body.slice(prefix.length + cmd.length).trim();
+ANYWAY, YOU MUST GIVE CREDIT TO MY CODE WHEN COPY IT
+CONTACT ME HERE +237656520674
+YT: KermHackTools
+Github: Kgtech-cmr
+*/
 
-  if (cmd === 'restart') {
-    try {
-      m.reply('PROSES....')
-     await process.exit()
-    } catch (error) {
-      console.error(error);
-      await m.React("❌");
-      return m.reply(`An error occurred while restarting the bot: ${error.message}`);
-    }
-  }
-};
+const config = require('../config')
+const {cmd , commands} = require('../command')
+const {sleep} = require('../lib/functions')
 
-export default restartBot;
+cmd({
+    pattern: "restart",
+    alias: ["rebot","reboot"], 
+    react: "🔄",
+    desc: "restart the bot",
+    category: "owner",
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
+try{
+if (!isOwner) return;
+const {exec} = require("child_process")
+reply("restarting...")
+await sleep(1500)
+exec("pm2 restart all")
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})

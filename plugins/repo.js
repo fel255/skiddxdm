@@ -6,7 +6,7 @@ const repo = async (m, gss) => {
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(" ")[0].toLowerCase() : "";
 
   if (["repo", "sc", "script", "info"].includes(cmd)) {
-    const githubRepoURL = "https://github.com/Raheem-cm/RAHEEM-XMD-2";
+    const githubRepoURL = "https://github.com/fel255/skiddxdm";
 
     try {
       // Extract username and repo name from the URL
@@ -28,7 +28,7 @@ const repo = async (m, gss) => {
       await gss.sendMessage(
         m.from,
         {
-          image: { url: "https://files.catbox.moe/vgb4cw.jpg" },
+          image: { url: "https://files.catbox.moe/yhy4en.jpg" },
           caption: formattedInfo,
           contextInfo: {
             mentionedJid: [m.sender],
@@ -36,7 +36,7 @@ const repo = async (m, gss) => {
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
               newsletterJid: "120363398101781980@newsletter",
-              newsletterName: "RAHEEM-XMD-2🪀",
+              newsletterName: "SKIDDYBMX",
               serverMessageId: 143,
             },
           },
@@ -56,8 +56,8 @@ const repo = async (m, gss) => {
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-              newsletterJid: "120363398101781980@newsletter",
-              newsletterName: "RAHEEM-XMD-2🪀",
+              newsletterJid: "120363419079746471@newsletter",
+              newsletterName: "SKIDDYBMX 🪀",
               serverMessageId: 143,
             },
           },

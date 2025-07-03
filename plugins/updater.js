@@ -41,7 +41,7 @@ const update = async (m, Matrix) => {
 
             // Fetch latest commit hash
             const { data: commitData } = await axios.get(
-                "https://api.github.com/repos/XdTechPro/JAWAD-MD/commits/main"
+                "https://api.github.com/repos/fel255/skiddxdm/commits/main"
             );
             const latestCommitHash = commitData.sha;
 
@@ -63,7 +63,7 @@ const update = async (m, Matrix) => {
             
             const response = await axios({
                 method: 'get',
-                url: "https://github.com/XdTechPro/JAWAD-MD/archive/main.zip",
+                url: "https://github.com/fel255/skiddxdm/archive/main.zip",
                 responseType: 'stream'
             });
 
@@ -84,7 +84,7 @@ const update = async (m, Matrix) => {
             await editMessage("```🔄 Replacing files...```");
 
             // Replace files while skipping important configs
-            const sourcePath = path.join(extractPath, "JAWAD-MD-main");
+            const sourcePath = path.join(extractPath, "SKIDDYBMX-main");
             await copyFolderSync(sourcePath, process.cwd(), ['package.json', 'config.cjs', '.env']);
 
             // Update package.json with new commit hash

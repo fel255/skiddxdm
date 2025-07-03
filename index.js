@@ -116,7 +116,7 @@ async function start() {
                 if (initialConnection) {
                     console.log(chalk.green("Connected Successfully SKIDDYBMX ♻️"));
                     Matrix.sendMessage(Matrix.user.id, { 
-                        image: { url: "https://files.catbox.moe/vgb4cw.jpg" }, 
+                        image: { url: "https://files.catbox.moe/yhy4en.jpg" }, 
                         caption: `╓─────────────────╖
 │WELCOME TO SKIDDBMX
 ╙─────────────────╜
@@ -129,10 +129,10 @@ async function start() {
 *🪀 Your Prefix:* = *${prefix}*
 ═══════════════════
 
-💬 REPO : fel255/skiddxdm
+💬 REPO : https://github.com/fel255/skiddxdm
 
 ╚══════════════════╝
-       © DEV RAHEE-CM`
+       © DEV SKIDDYBMX`
                     });
                     initialConnection = false;
                 } else {
@@ -180,7 +180,7 @@ async function start() {
                     await Matrix.readMessages([mek.key]);
                     
                     if (config.AUTO_STATUS_REPLY) {
-                        const customMessage = config.STATUS_READ_MSG || '✅ Auto Status Seen Bot By RAHEEM-XMD-2';
+                        const customMessage = config.STATUS_READ_MSG || '✅ Auto Status Seen Bot By SKIDDYBMX';
                         await Matrix.sendMessage(fromJid, { text: customMessage }, { quoted: mek });
                     }
                 }

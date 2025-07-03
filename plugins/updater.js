@@ -84,7 +84,7 @@ const update = async (m, Matrix) => {
             await editMessage("```🔄 Replacing files...```");
 
             // Replace files while skipping important configs
-            const sourcePath = path.join(extractPath, "SKIDDYBMX-main");
+            const sourcePath = path.join(extractPath, "skiddxdm-main");
             await copyFolderSync(sourcePath, process.cwd(), ['package.json', 'config.cjs', '.env']);
 
             // Update package.json with new commit hash

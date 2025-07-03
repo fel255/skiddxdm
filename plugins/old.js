@@ -222,11 +222,11 @@ const menu = async (m, Matrix) => {
         menuImage = Buffer.from(response.data, 'binary');
       } catch (error) {
         console.error('Error fetching menu image from URL, falling back to local image:', error);
-        menuImage = fs.readFileSync('https://files.catbox.moe/vgb4cw.jpg');
+        menuImage = fs.readFileSync('https://files.catbox.moe/yhy4en.jpg');
       }
     } else {
       // Use local image if MENU_IMAGE is not configured
-      menuImage = fs.readFileSync('https://files.catbox.moe/vgb4cw.jpg');
+      menuImage = fs.readFileSync('https://files.catbox.moe/oxirpo.mp4');
     }
 
     await Matrix.sendMessage(m.from, {
@@ -237,8 +237,8 @@ const menu = async (m, Matrix) => {
         forwardingScore: 999,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-          newsletterJid: '120363398101781980@newsletter',
-          newsletterName: "RAHEEM-XMD-2🪀",
+          newsletterJid: '120363419079746471@newsletter',
+          newsletterName: "SKIDDYBMX🚨",
           serverMessageId: 143
         }
       }
@@ -248,7 +248,7 @@ const menu = async (m, Matrix) => {
 
     // Send audio after sending the menu
     await Matrix.sendMessage(m.from, {
-      audio: { url: 'https://files.catbox.moe/yr2a3g.mp3' },
+      audio: { url: 'https://files.catbox.moe/oxirpo.mp4' },
       mimetype: 'audio/mp4',
       ptt: true
     }, { quoted: m });

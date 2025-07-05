@@ -1,8 +1,8 @@
 {
-  "name": "SKIDDXDM",
-  "description": "🚀 SKIDDXDM WhatsApp MultiDevice Bot – BY SKIDDXDM 💡✨",
+  "name": "♛꧁༒☾FELICIAN☽༒꧂♛",
+  "description": "🚀 SKIDDXDM WhatsApp MultiDevice Bot – BY ♛꧁༒☾FELICIAN☽༒꧂♛ 💡✨",
   "logo": "https://files.catbox.moe/vgb4cw.jpg",
-  "keywords": ["SKIDDXDM", "whatsapp-bot", "whatsapp-md-bot"],
+  "keywords": ["♛꧁༒☾FELICIAN☽༒꧂♛", "whatsapp-bot", "whatsapp-md-bot"],
   "repository": "https://github.com/fel255/skiddxdm",
   "stack": "container",
   "env": { 
@@ -20,7 +20,7 @@
     "OWNER_NAME": {
       "description": "Your name as the bot owner",
       "required": true,
-      "value": "SKIDDXDM"
+      "value": "♛꧁༒☾FELICIAN☽༒꧂♛"
     },
     "OWNER_NUMBER": {
       "description": "Your WhatsApp number",

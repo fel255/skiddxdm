@@ -1,16 +1,16 @@
 {
-  "name": "SKIDDXDM",
+  "name": "♛꧁༒☾FELICIAN☽༒꧂♛",
   "version": "10.8.1",
-  "description": "SKIDDXDM",
+  "description": "♛꧁༒☾FELICIAN☽༒꧂♛",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name  Raheem-cm",
-    "stop": "pm2 stop  SKIDDXDM",
-    "restart": "pm2 restart  SKIDDXDM"
+    "start": "pm2 start index.js --deep-monitoring --attach --name ♛꧁༒☾FELICIAN☽༒꧂♛",
+    "stop": "pm2 stop  ♛꧁༒☾FELICIAN☽༒꧂♛",
+    "restart": "pm2 restart  ♛꧁༒☾FELICIAN☽༒꧂♛"
   },
-  "keywords": ["SKIDDXDM", "whatsapp-bot", "whatsapp md bot"],
-  "author": " SKIDDXDM",
+  "keywords": ["♛꧁༒☾FELICIAN☽༒꧂♛", "whatsapp-bot", "whatsapp md bot"],
+  "author": " ♛꧁༒☾FELICIAN☽༒꧂♛",
   "license": "ISC",
   "dependencies": {
     "@whiskeysockets/baileys": "npm:@fizzxydev/baileys-pro@8.5.12",

@@ -89,13 +89,13 @@ async function start() {
     try {
         const { state, saveCreds } = await useMultiFileAuthState(sessionDir);
         const { version, isLatest } = await fetchLatestBaileysVersion();
-        console.log(`🤖 SKIDDXDM using WA v${version.join('.')}, isLatest: ${isLatest}`);
+        console.log(`🤖 ♛꧁༒☾FELICIAN☽༒꧂♛ using WA v${version.join('.')}, isLatest: ${isLatest}`);
         
         const Matrix = makeWASocket({
             version,
             logger: pino({ level: 'silent' }),
             printQRInTerminal: useQR,
-            browser: ["SKIDDYBMX", "safari", "3.3"],
+            browser: ["♛꧁༒☾FELICIAN☽༒꧂♛", "safari", "3.3"],
             auth: state,
             getMessage: async (key) => {
                 if (store) {
@@ -118,7 +118,7 @@ async function start() {
                     Matrix.sendMessage(Matrix.user.id, { 
                         image: { url: "https://files.catbox.moe/uf8r83.jpg" }, 
                         caption: `◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙                                               
-│WELCOME TO - ♛꧁༒☾FELICIAN☽༒꧂ 
+│WELCOME TO ♛꧁༒☾FELICIAN☽༒꧂ 
 ◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙
 *⚠️ Hello there User! 🤖.➤➤➤➤➤➤➤➤➤                                                      
 ➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤
@@ -132,7 +132,7 @@ async function start() {
 💬 REPO : https://github.com/fel255/skiddxdm
 ⊏▒▒▒▒▒▒▒⊐⊏▒▒▒▒▒▒▒⊐⊏▒▒▒▒▒▒▒⊐⊏▒▒
 ◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙
-       © DEV SKIDDYBMX`
+       © DEV  ♛꧁༒☾FELICIAN☽༒꧂♛`
                     });
                     initialConnection = false;
                 } else {
@@ -180,7 +180,7 @@ async function start() {
                     await Matrix.readMessages([mek.key]);
                     
                     if (config.AUTO_STATUS_REPLY) {
-                        const customMessage = config.STATUS_READ_MSG || '✅ Auto Status Seen Bot By SKIDDYBMX';
+                        const customMessage = config.STATUS_READ_MSG || '✅ Auto Status Seen Bot By  ♛꧁༒☾FELICIAN☽༒꧂♛';
                         await Matrix.sendMessage(fromJid, { text: customMessage }, { quoted: mek });
                     }
                 }

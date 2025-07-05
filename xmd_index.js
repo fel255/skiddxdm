@@ -89,13 +89,13 @@ async function start() {
     try {
         const { state, saveCreds } = await useMultiFileAuthState(sessionDir);
         const { version, isLatest } = await fetchLatestBaileysVersion();
-        console.log(`🤖 ♛꧁༒☾FELICIAN☽༒꧂♛ using WA v${version.join('.')}, isLatest: ${isLatest}`);
+        console.log(`🤖 ꧁༒☾FELICIAN☽༒꧂ using WA v${version.join('.')}, isLatest: ${isLatest}`);
         
         const Matrix = makeWASocket({
             version,
             logger: pino({ level: 'silent' }),
             printQRInTerminal: useQR,
-            browser: ["♛꧁༒☾FELICIAN☽༒꧂♛", "safari", "3.3"],
+            browser: ["꧁༒☾FELICIAN☽༒꧂", "safari", "3.3"],
             auth: state,
             getMessage: async (key) => {
                 if (store) {
@@ -114,25 +114,25 @@ async function start() {
                 }
             } else if (connection === 'open') {
                 if (initialConnection) {
-                    console.log(chalk.green("Connected Successfully done♛꧁༒☾FELICIAN☽༒꧂♛ ♻️"));
+                    console.log(chalk.green("Connected Successfully ꧁༒☾FELICIAN☽༒꧂♻️"));
                     Matrix.sendMessage(Matrix.user.id, { 
-                        image: { url: "https://files.catbox.moe/yhy4en.jpg" }, 
-                        caption: `◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙
-│WELCOME TO ♛꧁༒☾FELICIAN☽༒꧂♛
-◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙
+                        image: { url: "https://files.catbox.moe/78ywr9.jpg" }, 
+                        caption: `╓─────────────────╖
+│WELCOME TO ꧁༒☾FELICIAN☽༒꧂ 
+╙─────────────────╜
 *⚠️ Hello there User! 🤖*
 
-◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙
-♻️ 
+════════════════════
+♻️ CHANNEL : https://whatsapp.com/channel/0029VbB4Afi7Noa6lEDYhj3G
 
-◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙
-*🗝️ Your Prefix:* = *${prefix}*
-◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙
+═══════════════════
+*🪀 Your Prefix:* = *${prefix}*
+═══════════════════
 
 💬 REPO : https://github.com/fel255/skiddxdm
 
-◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙
-       © DEV ♛꧁༒☾FELICIAN☽༒꧂♛`
+╚══════════════════╝
+       © DEV ꧁༒☾FELICIAN☽༒꧂`
                     });
                     initialConnection = false;
                 } else {
@@ -180,7 +180,7 @@ async function start() {
                     await Matrix.readMessages([mek.key]);
                     
                     if (config.AUTO_STATUS_REPLY) {
-                        const customMessage = config.STATUS_READ_MSG || '✅ Auto Status Seen Bot By ♛꧁༒☾FELICIAN☽༒꧂♛';
+                        const customMessage = config.STATUS_READ_MSG || '✅ Auto Status Seen Bot By ꧁༒☾FELICIAN☽༒꧂';
                         await Matrix.sendMessage(fromJid, { text: customMessage }, { quoted: mek });
                     }
                 }

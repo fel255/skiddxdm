@@ -110,29 +110,29 @@ async function start() {
             const { connection, lastDisconnect } = update;
             if (connection === 'close') {
                 if (lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut) {
-                    start()
+                    start();
                 }
             } else if (connection === 'open') {
                 if (initialConnection) {
-                    console.log(chalk.green("Connected Successfully  ♛꧁༒☾FELICIAN☽༒꧂♛ ♻️"));
+                    console.log(chalk.green("Connected Successfully done♛꧁༒☾FELICIAN☽༒꧂♛ ♻️"));
                     Matrix.sendMessage(Matrix.user.id, { 
-                        image: { url: "https://files.catbox.moe/uf8r83.jpg" }, 
-                        caption: `◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙                                               
-│WELCOME TO ♛꧁༒☾FELICIAN☽༒꧂ 
-◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙
-*⚠️ Hello there User! 🤖.➤➤➤➤➤➤➤➤➤                                                      
-➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤
-◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙
+                        image: { url: "https://files.catbox.moe/yhy4en.jpg" }, 
+                        caption: `◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙
+│WELCOME TO ♛꧁༒☾FELICIAN☽༒꧂♛
+◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙
+*⚠️ Hello there User! 🤖*
+
+◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙
 ♻️ 
 
-◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙
-*➲ Your Prefix:* = *${prefix}*
-◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙
+◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙
+*🗝️ Your Prefix:* = *${prefix}*
+◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙
 
 💬 REPO : https://github.com/fel255/skiddxdm
-⊏▒▒▒▒▒▒▒⊐⊏▒▒▒▒▒▒▒⊐⊏▒▒▒▒▒▒▒⊐⊏▒▒
-◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙
-       © DEV  ♛꧁༒☾FELICIAN☽༒꧂♛`
+
+◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙
+       © DEV ♛꧁༒☾FELICIAN☽༒꧂♛`
                     });
                     initialConnection = false;
                 } else {
@@ -180,7 +180,7 @@ async function start() {
                     await Matrix.readMessages([mek.key]);
                     
                     if (config.AUTO_STATUS_REPLY) {
-                        const customMessage = config.STATUS_READ_MSG || '✅ Auto Status Seen Bot By  ♛꧁༒☾FELICIAN☽༒꧂♛';
+                        const customMessage = config.STATUS_READ_MSG || '✅ Auto Status Seen Bot By ♛꧁༒☾FELICIAN☽༒꧂♛';
                         await Matrix.sendMessage(fromJid, { text: customMessage }, { quoted: mek });
                     }
                 }
@@ -220,5 +220,4 @@ app.get('/', (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
-});
-  
+})

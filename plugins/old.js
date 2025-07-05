@@ -69,16 +69,16 @@ const menu = async (m, Matrix) => {
   if (validCommands.includes(cmd)) {
     const str = `
 ╭━━〔 *${config.BOT_NAME}* 〕━━┈⊷
-┃★╭──────────────
-┃★│ Owner : *${config.OWNER_NAME}*
-┃★│ User : *${m.pushName}*
-┃★│ Baileys : *Multi Device*
-┃★│ Type : *NodeJs*
-┃★│ Mode : *${mode}*
-┃★│ Platform : *${os.platform()}*
-┃★│ Prefix : [${prefix}]
-┃★│ Version : *1.0.0*
-┃★╰──────────────
+┃©️[][][][][][][][][][][]]]]]]]][]
+┃©️ Owner : *${config.OWNER_NAME}*
+┃©️ User : *${m.pushName}*
+┃©️ Baileys : *Multi Device*
+┃©️ Type : *NodeJs*
+┃©️ Mode : *${mode}*
+┃©️ Platform : *${os.platform()}*
+┃©️ Prefix : [${prefix}]
+┃©️ Version : *1.0.0*
+┃©️[][][]]][[][]][][][][]
 ╰━━━━━━━━━━━━━━━┈⊷
 
 > ${pushwish} *${m.pushName}*!
@@ -187,29 +187,29 @@ const menu = async (m, Matrix) => {
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
 
-╭━━〔 *Owner Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• join
-┃◈┃• leave
-┃◈┃• block
-┃◈┃• unblock
-┃◈┃• setppbot
-┃◈┃• anticall
-┃◈┃• setstatus
-┃◈┃• setnamebot
-┃◈┃• autotyping
-┃◈┃• alwaysonline
-┃◈┃• autoread
-┃◈┃• autosview
-┃◈└───────────┈⊷
+╭━━〔 *👑Owner Menu👑* 〕━━┈⊷
+┃ ©️*[][][][][][][][][]*
+┃ ©️*join*
+┃ ©️*leave*
+┃ ©️*block*
+┃ ©️*unblock*
+┃ ©️*setppbot*
+┃ ©️*anticall*
+┃ ©️*setstatus*
+┃ ©️*setnamebot*
+┃ ©️*autotyping*
+┃ ©️*alwaysonline*
+┃ ©️*autoread*
+┃ ©️*autosview*
+┃ ©️*[][][][][][][][]*
 ╰──────────────┈⊷
 
-╭━━〔 *Stalk Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• truecaller
-┃◈┃• instastalk
-┃◈┃• githubstalk
-┃◈└───────────┈⊷
+╭━━〔 *💾Stalk Menu💾* 〕━━┈⊷
+| ©️*[][][][][][][][]*
+┃ ©️*truecaller*
+┃ ©️*instastalk*
+┃ ©️*githubstalk*
+┃ ©️*[][][][][][][]*
 ╰──────────────┈⊷
 > *${config.DESCRIPTION}*`;
 
@@ -222,11 +222,11 @@ const menu = async (m, Matrix) => {
         menuImage = Buffer.from(response.data, 'binary');
       } catch (error) {
         console.error('Error fetching menu image from URL, falling back to local image:', error);
-        menuImage = fs.readFileSync('https://files.catbox.moe/yhy4en.jpg');
+        menuImage = fs.readFileSync('https://files.catbox.moe/vk39vl.jpg');
       }
     } else {
       // Use local image if MENU_IMAGE is not configured
-      menuImage = fs.readFileSync('https://files.catbox.moe/oxirpo.mp4');
+      menuImage = fs.readFileSync('https://files.catbox.moe/vk39vl.jpg');
     }
 
     await Matrix.sendMessage(m.from, {
@@ -248,7 +248,7 @@ const menu = async (m, Matrix) => {
 
     // Send audio after sending the menu
     await Matrix.sendMessage(m.from, {
-      audio: { url: 'https://files.catbox.moe/oxirpo.mp4' },
+      audio: { url: 'https://files.catbox.moe/5mldf0.mp4' },
       mimetype: 'audio/mp4',
       ptt: true
     }, { quoted: m });

@@ -1,18 +1,18 @@
 {
-  "name": "༒☾FELICIAN☽༒",
+  "name": "SKIDDXDM",
   "version": "10.8.1",
-  "description": "༒☾FELICIAN☽༒",
+  "description": "SKIDDXDM",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name ༒☾FELICIAN☽༒",
-    "stop": "pm2 stop Raheem-cm",
-    "restart": "pm2 restart Raheem-cm",
+    "start": "pm2 start index.js --deep-monitoring --attach --name Skiddxdm",
+    "stop": "pm2 stop Skiddxdm",
+    "restart": "pm2 restart Skiddxdm",
     "build": "echo 'No build step configured'",
     "test": "echo '✔️ Bot runs fine — no test yet'"
   },
-  "keywords": ["꧁༒☾FELICIAN☽༒꧂", "whatsapp-bot", "whatsapp md bot"],
-  "author": "꧁༒☾FELICIAN☽༒꧂",
+  "keywords": ["SKIDDXDM", "whatsapp-bot", "whatsapp md bot"],
+  "author": "Skiddxdm",
   "license": "ISC",
   "dependencies": {
     "@whiskeysockets/baileys": "npm:@fizzxydev/baileys-pro@8.5.12",

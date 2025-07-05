@@ -117,8 +117,7 @@ async function start() {
                     console.log(chalk.green("Connected Successfully  ♛꧁༒☾FELICIAN☽༒꧂♛ ♻️"));
                     Matrix.sendMessage(Matrix.user.id, { 
                         image: { url: "https://files.catbox.moe/uf8r83.jpg" }, 
-                        caption: `
-◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙                                                     
+                        caption: `◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙                                               
 │WELCOME TO - ♛꧁༒☾FELICIAN☽༒꧂ 
 ◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙◙
 *⚠️ Hello there User! 🤖.➤➤➤➤➤➤➤➤➤                                                      

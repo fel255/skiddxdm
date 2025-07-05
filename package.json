@@ -10,7 +10,7 @@
     "restart": "pm2 restart  ♛꧁༒☾FELICIAN☽༒꧂♛"
   },
   "keywords": ["♛꧁༒☾FELICIAN☽༒꧂♛", "whatsapp-bot", "whatsapp md bot"],
-  "author": " ♛꧁༒☾FELICIAN☽༒꧂♛",
+  "author": "♛꧁༒☾FELICIAN☽༒꧂♛",
   "license": "ISC",
   "dependencies": {
     "@whiskeysockets/baileys": "npm:@fizzxydev/baileys-pro@8.5.12",

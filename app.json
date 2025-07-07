@@ -1,14 +1,14 @@
 {
   "name": "SKIDDXDM",
   "description": "🚀 SKIDDXDM WhatsApp MultiDevice Bot – BY SKIDDXDM 💡✨",
-  "logo": "https://files.catbox.moe/78ywr9.jpg",
+  "logo": "https://files.catbox.moe/vgb4cw.jpg",
   "keywords": ["SKIDDXDM", "whatsapp-bot", "whatsapp-md-bot"],
   "repository": "https://github.com/fel255/skiddxdm",
   "stack": "container",
   "env": { 
   
     "SESSION_ID": {
-      "description": "Ensure your session Id starts with the word SKIDDY~",
+      "description": "Ensure your session Id starts with the word SKIDDY",
       "required": true,
       "value": ""
     },
@@ -97,4 +97,3 @@
       "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
     }
   ]
-}

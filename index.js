@@ -114,11 +114,11 @@ async function start() {
                 }
             } else if (connection === 'open') {
                 if (initialConnection) {
-                    console.log(chalk.green("Connected Successfully ༒☾FELICIAN☽༒♻️"));
+                    console.log(chalk.green("Connected Successfully SKIDDXMD♻️"));
                     Matrix.sendMessage(Matrix.user.id, { 
                         image: { url: "https://files.catbox.moe/78ywr9.jpg" }, 
                         caption: `╓─────────────────╖
-│WELCOME TO ꧁༒☾FELICIAN☽༒꧂ 
+│WELCOME TO SKIDDXMD
 ╙─────────────────╜
 *⚠️ Hello there User! 🤖*
 
@@ -132,7 +132,7 @@ async function start() {
 💬 REPO : https://github.com/fel255/skiddxdm
 
 ╚══════════════════╝
-       © DEV ꧁༒☾FELICIAN☽༒꧂`
+       © DEV SKIDDXMD`
                     });
                     initialConnection = false;
                 } else {
